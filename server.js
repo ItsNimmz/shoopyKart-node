@@ -32,7 +32,7 @@ app.use('/api', userRoute);
 app.use('/api', adminRoute);
 
 const forceSync = false;
-const PORT = 3004;
+const PORT = 3000;
 
 sequelize.sync({ force: forceSync })
     .then(async(result) => {
